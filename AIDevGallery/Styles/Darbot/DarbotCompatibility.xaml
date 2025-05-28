@@ -1,0 +1,22 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!-- Main brand gradient for Darbot cyber-retro theme -->
+    <LinearGradientBrush x:Key="DarbotBrandGradientBrush" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Color="{StaticResource DarbotPurpleColor}" Offset="0"/>
+        <GradientStop Color="{StaticResource DarbotBlueColor}" Offset="0.4"/>
+        <GradientStop Color="{StaticResource DarbotGreenColor}" Offset="1"/>
+    </LinearGradientBrush>
+    
+    <!-- Standard corner radius values -->
+    <CornerRadius x:Key="DarbotOverlayCornerRadius">12</CornerRadius>
+    <CornerRadius x:Key="DarbotControlCornerRadius">8</CornerRadius>
+    
+    <!-- Standard spacing values for 8-point grid -->
+    <Thickness x:Key="DarbotSpacing1">4</Thickness>
+    <Thickness x:Key="DarbotSpacing2">8</Thickness>
+    <Thickness x:Key="DarbotSpacing3">12</Thickness>
+    <Thickness x:Key="DarbotSpacing4">16</Thickness>
+    <Thickness x:Key="DarbotSpacing5">24</Thickness>
+    <Thickness x:Key="DarbotSpacing6">32</Thickness>
+</ResourceDictionary>

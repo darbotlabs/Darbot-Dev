@@ -36,7 +36,7 @@ If you're new to building apps with WinUI and the Windows App SDK, follow the [i
 ### 2. Clone the repository
 
 ```shell
-git clone https://github.com/microsoft/AI-Dev-Gallery.git
+git clone https://github.com/darbotlabs/darbot-dev.git
 ```
 
 ### 3. Open AIDevGallery.sln with Visual Studio!

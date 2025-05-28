@@ -1,0 +1,11 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/Styles/Darbot/DarbotColors.xaml"/>
+        <ResourceDictionary Source="/Styles/Darbot/DarbotCompatibility.xaml"/>
+        <ResourceDictionary Source="/Styles/Darbot/DarbotButtons.xaml"/>
+        <ResourceDictionary Source="/Styles/Darbot/DarbotTypography.xaml"/>
+        <ResourceDictionary Source="/Styles/Darbot/DarbotCards.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

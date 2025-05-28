@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="AIDevGallery.Pages.DarbotDemo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:AIDevGallery.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    
+    <Grid Background="{StaticResource DarbotDarkBackgroundBrush}">
+        <ScrollViewer Padding="16">
+            <StackPanel Spacing="24">
+                
+                <!-- Header Section -->
+                <StackPanel Spacing="12">
+                    <TextBlock 
+                        Text="Darbot Labs Cyber-Retro Design System" 
+                        Style="{StaticResource DarbotDisplayTextBlockStyle}"
+                        Foreground="{StaticResource DarbotTextPrimaryBrush}"
+                        HorizontalAlignment="Center" />
+                    <TextBlock 
+                        Text="A demonstration of the new cyber-retro aesthetic with gradient accents and modern typography"
+                        Style="{StaticResource DarbotHeadingTextBlockStyle}"
+                        Foreground="{StaticResource DarbotTextSecondaryBrush}"
+                        HorizontalAlignment="Center"
+                        TextWrapping="Wrap" />
+                </StackPanel>
+
+                <!-- Button Showcase -->
+                <Border 
+                    Background="{StaticResource DarbotMediumBackgroundBrush}"
+                    CornerRadius="12"
+                    Padding="16">
+                    <StackPanel Spacing="12">
+                        <TextBlock 
+                            Text="Button Styles" 
+                            Style="{StaticResource DarbotHeadingTextBlockStyle}"
+                            Foreground="{StaticResource DarbotTextPrimaryBrush}" />
+                        
+                        <StackPanel Orientation="Horizontal" Spacing="8">
+                            <Button 
+                                Content="Primary Action" 
+                                Style="{StaticResource DarbotAccentButtonStyle}" />
+                            <Button 
+                                Content="Secondary Action" 
+                                Style="{StaticResource DarbotSecondaryButtonStyle}" />
+                            <Button 
+                                Content="Tertiary Action" 
+                                Style="{StaticResource DarbotTertiaryButtonStyle}" />
+                            <Button 
+                                Content="Faded Effect" 
+                                Style="{StaticResource DarbotFadedButtonStyle}" />
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <!-- Color Palette Showcase -->
+                <Border 
+                    Background="{StaticResource DarbotMediumBackgroundBrush}"
+                    CornerRadius="12"
+                    Padding="16">
+                    <StackPanel Spacing="12">
+                        <TextBlock 
+                            Text="Color Palette" 
+                            Style="{StaticResource DarbotHeadingTextBlockStyle}"
+                            Foreground="{StaticResource DarbotTextPrimaryBrush}" />
+                        
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            
+                            <!-- Primary Colors -->
+                            <Border Grid.Column="0" Background="{StaticResource DarbotPurpleBrush}" 
+                                    Height="60" CornerRadius="8" Margin="4">
+                                <TextBlock Text="Purple" VerticalAlignment="Center" 
+                                          HorizontalAlignment="Center" Foreground="White" FontWeight="SemiBold" />
+                            </Border>
+                            <Border Grid.Column="1" Background="{StaticResource DarbotBlueBrush}" 
+                                    Height="60" CornerRadius="8" Margin="4">
+                                <TextBlock Text="Blue" VerticalAlignment="Center" 
+                                          HorizontalAlignment="Center" Foreground="White" FontWeight="SemiBold" />
+                            </Border>
+                            <Border Grid.Column="2" Background="{StaticResource DarbotGreenBrush}" 
+                                    Height="60" CornerRadius="8" Margin="4">
+                                <TextBlock Text="Green" VerticalAlignment="Center" 
+                                          HorizontalAlignment="Center" Foreground="White" FontWeight="SemiBold" />
+                            </Border>
+                            
+                            <!-- Gradient Effects -->
+                            <Border Grid.Row="1" Grid.ColumnSpan="3" 
+                                    Background="{StaticResource DarbotBrandGradientBrush}" 
+                                    Height="60" CornerRadius="8" Margin="4">
+                                <TextBlock Text="Brand Gradient" VerticalAlignment="Center" 
+                                          HorizontalAlignment="Center" Foreground="White" FontWeight="SemiBold" />
+                            </Border>
+                        </Grid>
+                    </StackPanel>
+                </Border>
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

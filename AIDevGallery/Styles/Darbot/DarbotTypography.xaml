@@ -1,0 +1,39 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!-- Display (Title Large) -->
+    <Style x:Key="DarbotDisplayTextBlockStyle" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="36"/> <!-- 2.25rem * 16 -->
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="LineHeight" Value="44"/>
+    </Style>
+    
+    <!-- Heading (Subtitle) -->
+    <Style x:Key="DarbotHeadingTextBlockStyle" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="28"/> <!-- 1.75rem * 16 -->
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="LineHeight" Value="36"/>
+    </Style>
+    
+    <!-- Body Text -->
+    <Style x:Key="DarbotBodyTextBlockStyle" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="16"/> <!-- 1.00rem * 16 -->
+        <Setter Property="FontWeight" Value="Normal"/>
+        <Setter Property="LineHeight" Value="24"/>
+    </Style>
+    
+    <!-- Body Strong Text -->
+    <Style x:Key="DarbotBodyStrongTextBlockStyle" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="16"/> <!-- 1.00rem * 16 -->
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="LineHeight" Value="24"/>
+    </Style>
+    
+    <!-- Code/Small Text -->
+    <Style x:Key="DarbotCodeTextBlockStyle" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="14"/> <!-- 0.875rem * 16 -->
+        <Setter Property="FontWeight" Value="Normal"/>
+        <Setter Property="LineHeight" Value="20"/>
+        <Setter Property="FontFamily" Value="Consolas"/>
+    </Style>
+</ResourceDictionary>

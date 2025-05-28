@@ -88,6 +88,7 @@
     <PackageReference Include="Markdig"/>
     <PackageReference Include="Roman-Numerals"/>
     <PackageReference Include="Microsoft.ML.OnnxRuntimeGenAI.Managed" />
+    <PackageReference Include="Microsoft.ML.OnnxRuntime" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
 

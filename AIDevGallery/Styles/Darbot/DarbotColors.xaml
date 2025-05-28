@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!-- Darbot Labs Core Color Palette -->
+    
+    <!-- Primary Colors -->
+    <Color x:Key="DarbotPurpleColor">#B54CFF</Color>
+    <Color x:Key="DarbotBlueColor">#0078FF</Color>
+    <Color x:Key="DarbotGreenColor">#00E0B4</Color>
+    
+    <SolidColorBrush x:Key="DarbotPurpleBrush" Color="{StaticResource DarbotPurpleColor}" />
+    <SolidColorBrush x:Key="DarbotBlueBrush" Color="{StaticResource DarbotBlueColor}" />
+    <SolidColorBrush x:Key="DarbotGreenBrush" Color="{StaticResource DarbotGreenColor}" />
+    
+    <!-- Gradient Brushes for Cyber-Retro Effects -->
+    <LinearGradientBrush x:Key="DarbotPurpleToBlueGradient" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Color="{StaticResource DarbotPurpleColor}" Offset="0" />
+        <GradientStop Color="{StaticResource DarbotBlueColor}" Offset="1" />
+    </LinearGradientBrush>
+    
+    <LinearGradientBrush x:Key="DarbotBlueToGreenGradient" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Color="{StaticResource DarbotBlueColor}" Offset="0" />
+        <GradientStop Color="{StaticResource DarbotGreenColor}" Offset="1" />
+    </LinearGradientBrush>
+    
+    <LinearGradientBrush x:Key="DarbotPurpleToGreenGradient" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Color="{StaticResource DarbotPurpleColor}" Offset="0" />
+        <GradientStop Color="{StaticResource DarbotGreenColor}" Offset="1" />
+    </LinearGradientBrush>
+    
+    <!-- Neutral Colors for Backgrounds and Text -->
+    <Color x:Key="DarbotDarkBackgroundColor">#0A0A0B</Color>
+    <Color x:Key="DarbotMediumBackgroundColor">#1A1A1D</Color>
+    <Color x:Key="DarbotLightBackgroundColor">#2A2A2F</Color>
+    <Color x:Key="DarbotTextPrimaryColor">#FFFFFF</Color>
+    <Color x:Key="DarbotTextSecondaryColor">#CCCCCC</Color>
+    <Color x:Key="DarbotTextMutedColor">#888888</Color>
+    
+    <SolidColorBrush x:Key="DarbotDarkBackgroundBrush" Color="{StaticResource DarbotDarkBackgroundColor}" />
+    <SolidColorBrush x:Key="DarbotMediumBackgroundBrush" Color="{StaticResource DarbotMediumBackgroundColor}" />
+    <SolidColorBrush x:Key="DarbotLightBackgroundBrush" Color="{StaticResource DarbotLightBackgroundColor}" />
+    <SolidColorBrush x:Key="DarbotTextPrimaryBrush" Color="{StaticResource DarbotTextPrimaryColor}" />
+    <SolidColorBrush x:Key="DarbotTextSecondaryBrush" Color="{StaticResource DarbotTextSecondaryColor}" />
+    <SolidColorBrush x:Key="DarbotTextMutedBrush" Color="{StaticResource DarbotTextMutedColor}" />
+    
+    <!-- Accent Colors with Transparency for Hover/Focus States -->
+    <Color x:Key="DarbotPurpleHoverColor">#CC4CFF</Color>
+    <Color x:Key="DarbotBlueHoverColor">#1F88FF</Color>
+    <Color x:Key="DarbotGreenHoverColor">#1FEAD4</Color>
+    
+    <SolidColorBrush x:Key="DarbotPurpleHoverBrush" Color="{StaticResource DarbotPurpleHoverColor}" />
+    <SolidColorBrush x:Key="DarbotBlueHoverBrush" Color="{StaticResource DarbotBlueHoverColor}" />
+    <SolidColorBrush x:Key="DarbotGreenHoverBrush" Color="{StaticResource DarbotGreenHoverColor}" />
+      <!-- Semantic Colors -->
+    <Color x:Key="DarbotSuccessColor">#00E0B4</Color>
+    <Color x:Key="DarbotWarningColor">#FFAD33</Color>
+    <Color x:Key="DarbotErrorColor">#FF4444</Color>
+    <Color x:Key="DarbotInfoColor">#0078FF</Color>
+    
+    <SolidColorBrush x:Key="DarbotSuccessBrush" Color="{StaticResource DarbotSuccessColor}" />
+    <SolidColorBrush x:Key="DarbotWarningBrush" Color="{StaticResource DarbotWarningColor}" />
+    <SolidColorBrush x:Key="DarbotErrorBrush" Color="{StaticResource DarbotErrorColor}" />
+    <SolidColorBrush x:Key="DarbotInfoBrush" Color="{StaticResource DarbotInfoColor}" />
+    
+    <!-- Border and Outline Colors -->
+    <Color x:Key="DarbotBorderColor">#404045</Color>
+    <Color x:Key="DarbotFocusBorderColor">#B54CFF</Color>
+    
+    <SolidColorBrush x:Key="DarbotBorderBrush" Color="{StaticResource DarbotBorderColor}" />
+    <SolidColorBrush x:Key="DarbotFocusBorderBrush" Color="{StaticResource DarbotFocusBorderColor}" />
+    
+</ResourceDictionary>
