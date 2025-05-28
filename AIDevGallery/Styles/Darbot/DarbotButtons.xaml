@@ -1,0 +1,52 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/Styles/Darbot/DarbotColors.xaml"/>
+        <ResourceDictionary Source="/Styles/Darbot/DarbotCompatibility.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+    
+    <!-- Primary Button with gradient background -->
+    <Style x:Key="DarbotAccentButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="{StaticResource DarbotBrandGradientBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource DarbotTextPrimaryBrush}"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Padding" Value="12,6"/>
+        <Setter Property="CornerRadius" Value="{StaticResource DarbotControlCornerRadius}"/>
+    </Style>
+    
+    <!-- Secondary Button with transparent background and border -->
+    <Style x:Key="DarbotSecondaryButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="{StaticResource DarbotTextPrimaryBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource DarbotBorderBrush}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Padding" Value="12,6"/>
+        <Setter Property="CornerRadius" Value="{StaticResource DarbotControlCornerRadius}"/>
+    </Style>
+    
+    <!-- Tertiary Button (text-only) -->
+    <Style x:Key="DarbotTertiaryButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="{StaticResource DarbotTextPrimaryBrush}"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Padding" Value="8,4"/>
+        <Setter Property="CornerRadius" Value="{StaticResource DarbotControlCornerRadius}"/>
+    </Style>
+    
+    <!-- Faded Button with semi-transparent gradient -->
+    <Style x:Key="DarbotFadedButtonStyle" TargetType="Button">
+        <Setter Property="Foreground" Value="{StaticResource DarbotTextPrimaryBrush}"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Padding" Value="12,6"/>
+        <Setter Property="CornerRadius" Value="{StaticResource DarbotControlCornerRadius}"/>
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush Opacity="0.2" StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="{StaticResource DarbotPurpleColor}" Offset="0"/>
+                    <GradientStop Color="{StaticResource DarbotGreenColor}" Offset="1"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

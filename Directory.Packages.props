@@ -22,6 +22,7 @@
     <PackageVersion Include="CommunityToolkit.WinUI.Controls.SettingsControls" Version="8.2.250402" />
     <PackageVersion Include="CommunityToolkit.WinUI.Converters" Version="8.2.250402" />
     <PackageVersion Include="Microsoft.Build" Version="17.13.9" />
+    <PackageVersion Include="Microsoft.ML.OnnxRuntime" Version="1.21.0" />
     <PackageVersion Include="Microsoft.ML.OnnxRuntime.DirectML" Version="1.21.0" />
     <PackageVersion Include="Microsoft.ML.OnnxRuntime.QNN" Version="1.21.0" />
     <PackageVersion Include="Microsoft.ML.OnnxRuntime.Extensions" Version="0.14.0" />
@@ -57,5 +58,7 @@
     <PackageVersion Include="HtmlAgilityPack" Version="1.12.1" />
     <PackageVersion Include="Markdig" Version="0.41.0" />
     <PackageVersion Include="Roman-Numerals" Version="2.0.1" />
+    <!-- === Added so AI Dev Gallery compiles without NU1008 === -->
+    <PackageVersion Include="Microsoft.AI.DirectML" Version="1.21.0" />
   </ItemGroup>
 </Project>
