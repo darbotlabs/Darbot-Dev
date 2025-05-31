@@ -1,8 +1,12 @@
 # Darbot Labs Cyber-Retro Design System
 
+> **Part of Darbot Dev** - A research fork for design system development and testing
+
 ## Overview
 
-The Darbot Labs Cyber-Retro Design System is a modern design language that blends cyberpunk aesthetics with a retro-futuristic feel, specifically designed for use in AI-powered developer tools like AIDevGallery. This design system provides components, styles, and guidelines to create consistent, visually striking, and functional user interfaces.
+The Darbot Labs Cyber-Retro Design System is a modern design language that blends cyberpunk aesthetics with a retro-futuristic feel, specifically designed for use in AI-powered developer tools like Darbot Dev (formerly AI Dev Gallery). This design system provides components, styles, and guidelines to create consistent, visually striking, and functional user interfaces.
+
+This design system is currently in active development as part of the Darbot Dev research project. **Components and APIs may change without notice.**
 
 ## Key Characteristics
 
@@ -121,4 +125,6 @@ The complete design specifications can be found in [StyleGuide.md](./StyleGuide.
 
 ---
 
-*© Darbot Labs 2025*
+*© Darbot Labs 2025 - Research & Development*
+
+> **Note**: This design system is part of the Darbot Dev research project. Use in production applications is not recommended. For stable design systems, consider Microsoft's Fluent UI or other established frameworks.

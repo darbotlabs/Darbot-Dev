@@ -125,7 +125,7 @@
         </NavigationView>
         <TitleBar
             x:Name="titleBar"
-            Title="AI Dev Gallery"
+            Title="Darbot Dev"
             Height="48"
             BackRequested="TitleBar_BackRequested"
             IsBackButtonVisible="{x:Bind NavFrame.CanGoBack, Mode=OneWay}"

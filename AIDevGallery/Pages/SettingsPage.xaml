@@ -116,8 +116,8 @@
                     <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="About" />
                     <toolkit:SettingsExpander
                         AutomationProperties.AccessibilityView="Raw"
-                        Description="© 2025. All rights reserved."
-                        Header="AI Dev Gallery"
+                        Description="© 2025. Research fork by Darbot Labs."
+                        Header="Darbot Dev"
                         HeaderIcon="{ui:BitmapIcon Source=ms-appx:///Assets/AppIcon/Icon.ico}"
                         IsExpanded="True">
                         <TextBlock Foreground="{ThemeResource TextFillColorSecondaryBrush}" IsTextSelectionEnabled="True">

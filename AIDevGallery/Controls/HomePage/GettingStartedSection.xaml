@@ -49,7 +49,7 @@
             <TextBlock
                 HorizontalAlignment="Center"
                 Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                Text="Discover how AI Dev Gallery helps you add on-device AI to your app" />
+                Text="Discover how Darbot Dev showcases AI capabilities with cyber-retro design" />
         </StackPanel>
         <Grid
             x:Name="SamplesFeatureGrid"
@@ -295,9 +295,9 @@
                     Grid.Row="1"
                     Padding="0"
                     AutomationProperties.Name="Explore APIs"
-                    NavigateUri="https://aka.ms/ai-dev-gallery-repo">
+                    NavigateUri="https://github.com/darbotlabs/darbot-dev">
                     <StackPanel Orientation="Horizontal" Spacing="4">
-                        <TextBlock Text="AI Dev Gallery repository" />
+                        <TextBlock Text="Darbot Dev repository" />
                         <FontIcon FontSize="12" Glyph="&#xE76C;" />
                     </StackPanel>
                 </HyperlinkButton>
