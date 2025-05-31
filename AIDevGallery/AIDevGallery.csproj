@@ -23,7 +23,7 @@
     <DefineConstants>TELEMETRYEVENTSOURCE_PUBLIC</DefineConstants>
     <DefineConstants>$(DefineConstants);DISABLE_XAML_GENERATED_MAIN</DefineConstants>
     <ApplicationIcon>Assets\AppIcon\Icon.ico</ApplicationIcon>
-    <AssemblyTitle>AI Dev Gallery</AssemblyTitle>
+    <AssemblyTitle>Darbot Dev</AssemblyTitle>
   </PropertyGroup>
 
   <ItemGroup>

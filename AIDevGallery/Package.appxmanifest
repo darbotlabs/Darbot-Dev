@@ -3,8 +3,8 @@
   <Identity Name="e7af07c0-77d2-43e5-ab82-9cdb9daa11b3" Publisher="CN=nikol" Version="0.3.11.36.0" />
   <mp:PhoneIdentity PhoneProductId="e7af07c0-77d2-43e5-ab82-9cdb9daa11b3" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>AI Dev Gallery Dev</DisplayName>
-    <PublisherDisplayName>nikol</PublisherDisplayName>
+    <DisplayName>Darbot Dev</DisplayName>
+    <PublisherDisplayName>Darbot Labs</PublisherDisplayName>
     <Logo>Assets\AppIcon\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
@@ -16,7 +16,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="$targetentrypoint$">
-      <uap:VisualElements DisplayName="AI Dev Gallery Dev" Description="AI Dev Gallery Dev" BackgroundColor="transparent" Square150x150Logo="Assets\AppIcon\MedTile.png" Square44x44Logo="Assets\AppIcon\AppList.png">
+      <uap:VisualElements DisplayName="Darbot Dev" Description="Darbot Dev - Research Fork" BackgroundColor="transparent" Square150x150Logo="Assets\AppIcon\MedTile.png" Square44x44Logo="Assets\AppIcon\AppList.png">
         <uap:DefaultTile Wide310x150Logo="Assets\AppIcon\WideTile.png" Square71x71Logo="Assets\AppIcon\SmallTile.png" Square310x310Logo="Assets\AppIcon\LargeTile.png">
           <uap:ShowNameOnTiles>
             <uap:ShowOn Tile="square150x150Logo" />
@@ -29,7 +29,7 @@
       <Extensions>
         <uap:Extension Category="windows.protocol">
           <uap:Protocol Name="aidevgallery">
-            <uap:DisplayName>AI Dev Gallery Dev</uap:DisplayName>
+            <uap:DisplayName>Darbot Dev</uap:DisplayName>
           </uap:Protocol>
         </uap:Extension>
       </Extensions>
