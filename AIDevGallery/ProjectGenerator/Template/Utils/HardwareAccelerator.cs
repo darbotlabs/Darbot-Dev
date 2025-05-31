@@ -8,4 +8,7 @@ internal enum HardwareAccelerator
     WCRAPI,
     OLLAMA,
     OPENAI,
+    LEMONADE,
+    MCP,
+    OMNIPARSER
 }
