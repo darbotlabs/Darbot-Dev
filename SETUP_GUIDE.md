@@ -1,4 +1,6 @@
-# AI Dev Gallery - Complete Setup and Troubleshooting Guide
+# Darbot Dev - Complete Setup and Troubleshooting Guide
+
+> **Research Fork Notice**: This is a setup guide for the Darbot Dev research fork. For the official Microsoft AI Dev Gallery, visit the [original repository](https://github.com/microsoft/ai-dev-gallery).
 
 ## 🚀 Quick Start Guide
 
@@ -313,4 +315,4 @@ git pull origin main
 
 **Last Updated:** $(Get-Date -Format "yyyy-MM-dd")
 **Validation Script Version:** 1.0.0
-**Compatible with:** AI Dev Gallery v0.3.11-alpha
+**Compatible with:** Darbot Dev v0.3.11-alpha (research fork)
