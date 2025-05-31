@@ -20,7 +20,9 @@ internal static class ExternalModelHelper
     private static List<IExternalModelProvider> _modelProviders = [
         OllamaModelProvider.Instance,
         OpenAIModelProvider.Instance,
-        LemonadeModelProvider.Instance
+        LemonadeModelProvider.Instance,
+        MCPModelProvider.Instance,
+        OmniparserModelProvider.Instance
     ];
 
     public static async Task<IEnumerable<ModelDetails>> GetAllModelsAsync()

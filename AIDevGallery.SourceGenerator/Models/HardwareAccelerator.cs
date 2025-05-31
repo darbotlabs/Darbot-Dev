@@ -12,5 +12,9 @@ internal enum HardwareAccelerator
     DML,
     QNN,
     WCRAPI,
-    OLLAMA
+    OLLAMA,
+    OPENAI,
+    LEMONADE,
+    MCP,
+    OMNIPARSER
 }

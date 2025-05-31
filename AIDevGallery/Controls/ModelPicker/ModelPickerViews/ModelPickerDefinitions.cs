@@ -58,6 +58,24 @@ internal class ModelPickerDefinition
                 CreatePicker = () => new LemonadePickerView(),
                 IsAvailable = LemonadeModelProvider.Instance.IsAvailable
             }
+        },
+        {
+            "mcp", new ModelPickerDefinition()
+            {
+                Name = "MCP Library",
+                Id = "mcp",
+                Icon = $"ms-appx:///Assets/ModelIcons/MCP{AppUtils.GetThemeAssetSuffix()}.svg",
+                CreatePicker = () => new MCPPickerView()
+            }
+        },
+        {
+            "omniparser", new ModelPickerDefinition()
+            {
+                Name = "Omniparser",
+                Id = "omniparser",
+                Icon = $"ms-appx:///Assets/ModelIcons/Omniparser{AppUtils.GetThemeAssetSuffix()}.svg",
+                CreatePicker = () => new OmniparserPickerView()
+            }
         }
     };
 

@@ -171,7 +171,9 @@ internal enum HardwareAccelerator
     WCRAPI,
     OLLAMA,
     OPENAI,
-    LEMONADE
+    LEMONADE,
+    MCP,
+    OMNIPARSER
 }
 
 [JsonConverter(typeof(JsonStringEnumConverter<AIToolkitAction>))]
