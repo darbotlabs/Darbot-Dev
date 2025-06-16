@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page
+    x:Class="AIDevGallery.Pages.MCPSettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="using:CommunityToolkit.WinUI.Controls"
+    xmlns:ui="using:CommunityToolkit.WinUI"
+    mc:Ignorable="d">
+
+    <ScrollViewer>
+        <StackPanel Margin="24" Spacing="24">
+            <!-- MCP Configuration Section -->
+            <toolkit:SettingsExpander
+                Header="MCP (Model Context Protocol) Configuration"
+                Description="Configure MCP server endpoints and model connections"
+                IsExpanded="True">
+                <toolkit:SettingsExpander.HeaderIcon>
+                    <ImageIcon Source="ms-appx:///Assets/ModelIcons/MCP.light.svg" />
+                </toolkit:SettingsExpander.HeaderIcon>
+                
+                <toolkit:SettingsExpander.Items>
+                    <toolkit:SettingsCard
+                        Header="Enable MCP Integration"
+                        Description="Allow Darbot Dev to connect to MCP servers">
+                        <ToggleSwitch x:Name="MCPEnabledToggle" IsOn="True" />
+                    </toolkit:SettingsCard>
+                    
+                    <toolkit:SettingsCard
+                        Header="Default MCP Server URL"
+                        Description="Primary MCP server endpoint">
+                        <TextBox x:Name="MCPServerUrlTextBox" 
+                                Text="http://localhost:8000" 
+                                PlaceholderText="Enter MCP server URL"
+                                Width="300" />
+                    </toolkit:SettingsCard>
+                    
+                    <toolkit:SettingsCard
+                        Header="Auto-discover MCP Servers"
+                        Description="Automatically detect MCP servers on common ports">
+                        <ToggleSwitch x:Name="MCPAutoDiscoverToggle" IsOn="True" />
+                    </toolkit:SettingsCard>
+                    
+                    <toolkit:SettingsCard
+                        Header="Connection Timeout"
+                        Description="Timeout for MCP server connections (seconds)">
+                        <NumberBox x:Name="MCPTimeoutNumberBox" 
+                                  Value="5" 
+                                  Minimum="1" 
+                                  Maximum="30"
+                                  Width="100" />
+                    </toolkit:SettingsCard>
+                </toolkit:SettingsExpander.Items>
+            </toolkit:SettingsExpander>
+
+            <!-- Local Model Server Section -->
+            <toolkit:SettingsExpander
+                Header="Local Model Server"
+                Description="Expose local models for external applications (similar to Ollama)"
+                IsExpanded="True">
+                <toolkit:SettingsExpander.HeaderIcon>
+                    <FontIcon Glyph="&#xE968;" />
+                </toolkit:SettingsExpander.HeaderIcon>
+                
+                <toolkit:SettingsExpander.Items>
+                    <toolkit:SettingsCard
+                        Header="Enable Local Server"
+                        Description="Allow external applications to connect to local models">
+                        <ToggleSwitch x:Name="LocalServerEnabledToggle" 
+                                     IsOn="False"
+                                     Toggled="LocalServerEnabledToggle_Toggled" />
+                    </toolkit:SettingsCard>
+                    
+                    <toolkit:SettingsCard
+                        Header="Server Port"
+                        Description="Port for local model server (default: 11434)">
+                        <NumberBox x:Name="LocalServerPortNumberBox" 
+                                  Value="11434" 
+                                  Minimum="1024" 
+                                  Maximum="65535"
+                                  Width="100" />
+                    </toolkit:SettingsCard>
+                    
+                    <toolkit:SettingsCard
+                        Header="Server Status"
+                        Description="Current status of the local model server">
+                        <StackPanel Orientation="Horizontal" Spacing="8">
+                            <Ellipse x:Name="ServerStatusIndicator" 
+                                    Width="12" 
+                                    Height="12" 
+                                    Fill="Red" />
+                            <TextBlock x:Name="ServerStatusText" Text="Stopped" />
+                        </StackPanel>
+                    </toolkit:SettingsCard>
+                    
+                    <toolkit:SettingsCard
+                        Header="Test Connection"
+                        Description="Test the local server endpoint">
+                        <Button x:Name="TestServerButton" 
+                               Content="Test Server"
+                               Click="TestServerButton_Click" />
+                    </toolkit:SettingsCard>
+                </toolkit:SettingsExpander.Items>
+            </toolkit:SettingsExpander>
+
+            <!-- NLWeb Integration Section -->
+            <toolkit:SettingsExpander
+                Header="Natural Language Web (NLWeb)"
+                Description="Configure natural language web interactions"
+                IsExpanded="True">
+                <toolkit:SettingsExpander.HeaderIcon>
+                    <FontIcon Glyph="&#xE8BD;" />
+                </toolkit:SettingsExpander.HeaderIcon>
+                
+                <toolkit:SettingsExpander.Items>
+                    <toolkit:SettingsCard
+                        Header="Enable NLWeb"
+                        Description="Process natural language queries for web interactions">
+                        <ToggleSwitch x:Name="NLWebEnabledToggle" IsOn="True" />
+                    </toolkit:SettingsCard>
+                    
+                    <toolkit:SettingsCard
+                        Header="Response Temperature"
+                        Description="Creativity level for NLWeb responses (0.0 = precise, 1.0 = creative)">
+                        <Slider x:Name="NLWebTemperatureSlider" 
+                               Value="0.3" 
+                               Minimum="0.0" 
+                               Maximum="1.0" 
+                               StepFrequency="0.1"
+                               Width="200" />
+                    </toolkit:SettingsCard>
+                    
+                    <toolkit:SettingsCard
+                        Header="Auto-suggest Web Actions"
+                        Description="Automatically suggest web-based actions for queries">
+                        <ToggleSwitch x:Name="NLWebAutoSuggestToggle" IsOn="True" />
+                    </toolkit:SettingsCard>
+                </toolkit:SettingsExpander.Items>
+            </toolkit:SettingsExpander>
+
+            <!-- Production Readiness Section -->
+            <toolkit:SettingsExpander
+                Header="Production Settings"
+                Description="Production deployment and validation settings"
+                IsExpanded="False">
+                <toolkit:SettingsExpander.HeaderIcon>
+                    <FontIcon Glyph="&#xE7BA;" />
+                </toolkit:SettingsExpander.HeaderIcon>
+                
+                <toolkit:SettingsExpander.Items>
+                    <toolkit:SettingsCard
+                        Header="Enable Telemetry"
+                        Description="Send usage telemetry to help improve Darbot Dev">
+                        <ToggleSwitch x:Name="TelemetryEnabledToggle" IsOn="True" />
+                    </toolkit:SettingsCard>
+                    
+                    <toolkit:SettingsCard
+                        Header="Error Reporting"
+                        Description="Automatically report errors for debugging">
+                        <ToggleSwitch x:Name="ErrorReportingToggle" IsOn="True" />
+                    </toolkit:SettingsCard>
+                    
+                    <toolkit:SettingsCard
+                        Header="Performance Monitoring"
+                        Description="Monitor application performance metrics">
+                        <ToggleSwitch x:Name="PerformanceMonitoringToggle" IsOn="False" />
+                    </toolkit:SettingsCard>
+                    
+                    <toolkit:SettingsCard
+                        Header="Run Validation"
+                        Description="Run comprehensive validation tests">
+                        <Button x:Name="RunValidationButton" 
+                               Content="Run Validation"
+                               Click="RunValidationButton_Click" />
+                    </toolkit:SettingsCard>
+                </toolkit:SettingsExpander.Items>
+            </toolkit:SettingsExpander>
+
+            <!-- Action Buttons -->
+            <StackPanel Orientation="Horizontal" Spacing="12" HorizontalAlignment="Right">
+                <Button x:Name="ResetButton" 
+                       Content="Reset to Defaults"
+                       Style="{StaticResource DefaultButtonStyle}"
+                       Click="ResetButton_Click" />
+                <Button x:Name="SaveButton" 
+                       Content="Save Settings"
+                       Style="{StaticResource AccentButtonStyle}"
+                       Click="SaveButton_Click" />
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Page>
