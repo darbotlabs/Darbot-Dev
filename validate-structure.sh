@@ -87,7 +87,7 @@ validate_step "Documentation Present" 10 "test -f README.md && test -f Darbot/RE
 validate_step "Darbot Design System" 15 "test -d Darbot && test -f Darbot/Status.md && test -f Darbot/StyleGuide.md" \
     "Darbot design system files present" "Darbot design system incomplete"
 
-validate_step "Version Configuration" 10 "grep -q 'version.*0.3.11-alpha' version.json" \
+validate_step "Version Configuration" 10 "grep -q 'version.*0.4.4-alpha' version.json" \
     "Version configuration valid" "Version configuration invalid"
 
 validate_step "Target Framework Check" 15 "grep -q 'net9.0-windows10.0.22621.0' AIDevGallery/AIDevGallery.csproj" \
