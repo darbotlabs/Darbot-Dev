@@ -55,7 +55,7 @@ print_header "🚀 Production Readiness Validation" "Comprehensive production de
 validate_step "Application Build Ready" 20 "test -f AIDevGallery.sln && test -f build.ps1" \
     "Build system properly configured" "Missing build configuration"
 
-validate_step "Version Configuration" 15 "test -f version.json && grep -q '0.3.11-alpha' version.json" \
+validate_step "Version Configuration" 15 "test -f version.json && grep -q '0.4.4-alpha' version.json" \
     "Version properly configured" "Version configuration missing or invalid"
 
 validate_step "Package Dependencies" 15 "test -f Directory.Packages.props && grep -c 'PackageVersion Include' Directory.Packages.props | awk '{if(\$1 > 20) exit 0; else exit 1}'" \
