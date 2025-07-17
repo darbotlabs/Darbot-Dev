@@ -28,6 +28,11 @@
     <PackageVersion Include="Microsoft.ML.OnnxRuntime.Extensions" Version="0.14.0" />
     <PackageVersion Include="Microsoft.WindowsAppSDK" Version="1.8.250610002-experimental3" />
     <PackageVersion Include="Microsoft.ML.OnnxRuntimeGenAI.Managed" Version="0.8.2" />
+    <PackageVersion Include="Microsoft.ML.OnnxRuntime" Version="1.22.0" />
+    <PackageVersion Include="Microsoft.ML.OnnxRuntime.QNN" Version="1.22.0" />
+    <PackageVersion Include="Microsoft.ML.OnnxRuntimeGenAI.QNN" Version="0.8.2" />
+    <PackageVersion Include="Microsoft.ML.OnnxRuntime.DirectML" Version="1.22.0" />
+    <PackageVersion Include="Microsoft.ML.OnnxRuntimeGenAI.DirectML" Version="0.8.2" />
     <PackageVersion Include="CommunityToolkit.WinUI.Animations" Version="8.2.250402" />
     <PackageVersion Include="CommunityToolkit.WinUI.Extensions" Version="8.2.250402" />
     <PackageVersion Include="CommunityToolkit.WinUI.Controls.Sizers" Version="8.2.250402" />
@@ -44,7 +49,8 @@
     <PackageVersion Include="Microsoft.Bcl.AsyncInterfaces" Version="9.0.6" />
     <PackageVersion Include="System.IO.Pipelines" Version="9.0.6" />
     <PackageVersion Include="StyleCop.Analyzers" Version="1.2.0-beta.556" />
-    <PackageVersion Include="Nerdbank.GitVersioning" Version="3.7.115" />
+    <!-- Disabled Nerdbank.GitVersioning due to shallow clone issues -->
+    <!-- <PackageVersion Include="Nerdbank.GitVersioning" Version="3.7.115" /> -->
     <PackageVersion Include="Microsoft.TestPlatform.TestHost" Version="17.14.1" />
     <!-- Keep version in sync with GHAction build.yml (vstest.console.exe) -->
     <PackageVersion Include="MSTest.TestAdapter" Version="3.9.2" />

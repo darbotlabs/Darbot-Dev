@@ -11,14 +11,18 @@
     <AnalysisMode>Recommended</AnalysisMode>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <!-- Fallback version info for GitVersioning shallow clone handling -->
+    <VersionPrefix>0.4.4</VersionPrefix>
+    <VersionSuffix>dev</VersionSuffix>
   </PropertyGroup>
   <PropertyGroup>
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
   </PropertyGroup>
   
-  <ItemGroup>
+  <!-- Disabled Nerdbank.GitVersioning due to shallow clone issues -->
+  <!-- <ItemGroup>
     <PackageReference Include="Nerdbank.GitVersioning" Condition="!Exists('packages.config')" PrivateAssets="All" />
-  </ItemGroup>
+  </ItemGroup> -->
   <PropertyGroup Condition="$(Configuration)=='Release'">
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
