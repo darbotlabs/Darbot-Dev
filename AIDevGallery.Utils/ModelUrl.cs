@@ -114,7 +114,7 @@ public class HuggingFaceUrl : ModelUrl
             modelNameOrUrl = modelNameOrUrl[23..];
         }
 
-        string[] urlComponents = modelNameOrUrl.Split(new char[] { '/' }, StringSplitOptions.RemoveEmptyEntries);
+        string[] urlComponents = modelNameOrUrl.Split(['/'], StringSplitOptions.RemoveEmptyEntries);
 
         if (urlComponents.Length < 2)
         {
@@ -181,7 +181,7 @@ public class GitHubUrl : ModelUrl
 
         url = url[19..];
 
-        string[] urlComponents = url.Split(new char[] { '/' }, StringSplitOptions.RemoveEmptyEntries);
+        string[] urlComponents = url.Split(['/'], StringSplitOptions.RemoveEmptyEntries);
 
         if (urlComponents.Length < 2)
         {

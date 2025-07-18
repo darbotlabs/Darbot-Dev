@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows10.0.22621.0</TargetFramework>
+    <TargetFramework>net9.0-windows10.0.22621.0</TargetFramework>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <RootNamespace>AIDevGallery</RootNamespace>
     <ApplicationManifest>app.manifest</ApplicationManifest>
@@ -11,12 +11,7 @@
     <UseWinUI>true</UseWinUI>
     <EnableMsixTooling>true</EnableMsixTooling>
     <Nullable>enable</Nullable>
-    <LangVersion>12.0</LangVersion>
-    <EnableWindowsTargeting>true</EnableWindowsTargeting>
-    <Version>0.4.4</Version>
-    <AssemblyVersion>0.4.4.0</AssemblyVersion>
-    <FileVersion>0.4.4.0</FileVersion>
-    <GitVersioningDisableVersionAssemblyAttribute>true</GitVersioningDisableVersionAssemblyAttribute>
+    <LangVersion>preview</LangVersion>
     <NoWarn>CS8305;WMC1501</NoWarn>
     <!-- https://github.com/microsoft/CsWin32/issues/1273 -->
     <NoWarn>$(NoWarn);IL2050</NoWarn>
